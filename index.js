@@ -9,6 +9,10 @@ let users = [];
 let currentId = 1;
 let currentUserId = 1;
 
+app.get('/', (req, res) => {
+    res.send('Teste');
+});
+
 app.post('/veiculos', (req, res) => {
     const { modelo, marca, ano, cor, preco } = req.body;
 
